@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    String palabraOculta = "";
+    public static String palabraOculta = "";
     public static int numeroDeFallos = 0;
     public static boolean victoria = false;
 
@@ -83,11 +83,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String eligePalabra(){
-        String [] listaPalabras = {"HOLA", "COMUNISMO", "PALA", "BETIS",
-                "COREA", "POPI", "ANDERE", "POLO", "CASA", "ROPA", "VAYA", "PETO", "PIRUJA", "BRUJA",
-                "UNITY", "CORONAVIRUS", "VIRUSSINCORONA", "CHINA", "WIKILEAKS", "ANDROID", "FRAXITO",
-                "FIERP", "CHIKIBEIBI", "NARUTO", "FRIKI", "POKEMON", "TRAFALGAR", "LEYES", "HIJOS",
-                "AYAYAY", "EZ", "FORNITE", "COUNTER", "ASALTO", "MATAR", "POU"};
 
         String [] listaDeportesF = {"BOTA", "BALON", "PISTA", "GOL", "GOLF", "SURF", "TABLA", "SKI", "PATIN", "MARCA", "SKATE", "CAMPO", "SALTO", "TENIS", "RED"};
         String [] listaDeportesM = {"CANASTA", "TRIPLE", "TENISTA", "CARRERA", "ARBITRO", "JUGADOR", "MARCAJE", "EQUIPO", "PUBLICO", "MEDALLA", "TROFEO", "GANADOR"};

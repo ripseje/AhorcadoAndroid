@@ -25,6 +25,11 @@ public class Seleccion extends AppCompatActivity {
         setContentView(R.layout.activity_seleccion);
     }
 
+    @Override
+    public void onBackPressed() {
+        // do nothing.
+    }
+
     public void bonus(View view){
         faz = false;
         med = false;
