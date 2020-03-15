@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class VolverAJugar extends AppCompatActivity {
@@ -14,6 +15,13 @@ public class VolverAJugar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volver_a_jugar);
+        if(!MainActivity.victoria){
+            ((ImageView) findViewById(R.id.imageView)).setImageResource(R.drawable.x);
+        }
+        else{
+            ((ImageView) findViewById(R.id.imageView)).setImageResource(R.drawable.tick);
+            MainActivity.victoria = false;
+        }
     }
 
     @Override

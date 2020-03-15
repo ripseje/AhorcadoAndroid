@@ -27,7 +27,8 @@ public class Seleccion extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // do nothing.
+        Intent ventana = new Intent(this, Inicio.class);
+        startActivity(ventana);
     }
 
     public void bonus(View view){

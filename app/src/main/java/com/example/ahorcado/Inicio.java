@@ -16,11 +16,23 @@ public class Inicio extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // do nothing.
+        finish();
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     public void dejarInicio(View view){
         Intent ventana = new Intent(this, Seleccion.class);
         startActivity(ventana);
+    }
+
+    public void salir(View view){
+        finish();
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }

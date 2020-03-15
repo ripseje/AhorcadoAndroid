@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 case 4 : imagenAhorcado.setImageResource(R.drawable.ahorcado_4); break;
                 case 5 : imagenAhorcado.setImageResource(R.drawable.ahorcado_5); break;
                 case 100 : imagenAhorcado.setImageResource(R.drawable.acertastetodo); break;
-                default: imagenAhorcado.setImageResource(R.drawable.ahorcado_fin); victoria = true; volveraJugar(); break;
+                default: imagenAhorcado.setImageResource(R.drawable.ahorcado_fin); victoria = false; volveraJugar(); break;
             }
         }
     }
@@ -183,7 +183,6 @@ public class MainActivity extends AppCompatActivity {
         Seleccion.cin = false;
         Seleccion.tec = false;
         numeroDeFallos = 0;
-        victoria = false;
         Intent ventana = new Intent(this, VolverAJugar.class);
         startActivity(ventana);
     }
